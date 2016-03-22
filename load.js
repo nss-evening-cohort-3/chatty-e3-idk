@@ -1,11 +1,11 @@
 'use strict'
 
-Chatty = (function(originalChatty) {
+var Chatty = (function(originalChatty) {
 
   let loadSuccess= function(){
     var myMessages = JSON.parse(this.responseText);
 
-    showMessages(myMessages.messages, "messageArea");
+    showMessages(myMessages.messages, "textArea");
   }
 
   let loadFailed = function () {
