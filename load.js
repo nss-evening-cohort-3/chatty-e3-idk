@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-Chatty = (function(originalChatty) {
+var Chatty = (function(originalChatty) {
 
   function loadSuccess(){
     var myMessages = JSON.parse(this.responseText);
