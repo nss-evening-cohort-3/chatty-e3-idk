@@ -1,12 +1,17 @@
 'use strict'
 
-let Chatty = (function(originalChatty) {
+Chatty = (function(originalChatty) {
 
-  function loadSuccess (){
+  function loadSuccess(){
     var myMessages = JSON.parse(this.responseText);
 
-    showMessages(myText.messages, "messageArea");
+    showMessages(myMessages.messages, "messageArea");
   }
+
+  function showMessages(thingOne, thingTwo) {
+    console.log(thingOne);
+  }
+
 
   function loadFailed () {
     alert("Sorry, that didn't work.");
@@ -24,4 +29,4 @@ let Chatty = (function(originalChatty) {
 
   return originalChatty;
 
-})(Chatty || {});
+})( Chatty || {} );
