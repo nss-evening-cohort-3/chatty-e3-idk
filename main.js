@@ -7,13 +7,14 @@ var Chatty = (function() {
 
 })();
 
-
+// ------ Sends the message string (of JSON messages) to the DOM --------------- //
 let showMessages = function(ourText, elId) {
   let messageArea = document.getElementById(elId);
 
   messageArea.innerHTML = buildMessages(ourText);
 }
 
+// ------ Builds a message string from the JSON message data (loaded by load.js) --------------- //
 let buildMessages = function(messages) {
 
   let ourMessages = "";
@@ -26,3 +27,6 @@ let buildMessages = function(messages) {
   });
   return ourMessages;
 }
+
+
+
