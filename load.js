@@ -2,18 +2,13 @@
 
 Chatty = (function(originalChatty) {
 
-  function loadSuccess(){
+  let loadSuccess= function(){
     var myMessages = JSON.parse(this.responseText);
 
     showMessages(myMessages.messages, "messageArea");
   }
 
-  function showMessages(thingOne, thingTwo) {
-    console.log(thingOne);
-  }
-
-
-  function loadFailed () {
+  let loadFailed = function () {
     alert("Sorry, that didn't work.");
   }
 
