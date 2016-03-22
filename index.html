@@ -5,46 +5,50 @@
   <meta http-equiv="=X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="css/quiz.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-
+  <link rel="stylesheet" type="text/css" href="main.css">
   <title>IDK Chatty Group Project</title>
 
 </head>
 <body>
+  
+<!-- nav bar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-form navbar-left">
         <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-                <input type="text" id="desc-input" class="form-control" placeholder="Enter message">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Clear message board</button>
-                </span>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" id="desc-input" class="form-control" placeholder="Enter message">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Clear message board</button>
+              </span>
+            </div><!-- /input-group -->
+          
+          <div class="checkbox">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="checkBoxDarkTheme" value="option1">Dark theme
+            </label>
+         
+
+          
+            <label class="checkbox-inline">
+              <input type="checkbox" id="checkBoxLargeText" value="option2">Large text
+            </label>
+          
+          </div>
+        </div>
       </div>
     </div>
   </nav>
+  
+  <!--message area  -->
+  <p id="message">Messages:</p>
+  
+  <textarea id="textArea" class="form-control" rows="20"></textarea>
 
-  <div class="messageTextCheckBox">
-    <div class="checkbox-inline">
-      <label>
-        <input type="checkbox" id="checkBoxDarkTheme" value="option1">
-        Dark theme
-      </label>
-    </div>
-    <div class="checkbox-inline">
-      <label>
-        <input type="checkbox" id="checkBoxLargeText" value="option1">
-        Large text
-      </label>
-    </div>
-  </div>
 
-  <div id="messageArea">
-  </div>
+
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -54,10 +58,10 @@
   <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 
-  <script type="text/javascript" src= "main.js"></script>
+  <!-- <script type="text/javascript" src= "main.js"></script>
   <script type="text/javascript" src= "load.js"></script>
   <script type="text/javascript" src= "add.js"></script>
   <script type="text/javascript" src= "delete.js"></script>
-
+ -->
 </body>
 </html>
