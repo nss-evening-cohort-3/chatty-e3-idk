@@ -16,3 +16,7 @@
   background-color: gray;
   color: white;
 }
+
+.largeText {
+  font-size: 2em;
+}
