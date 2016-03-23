@@ -11,3 +11,8 @@
 #desc-input{
    border:solid 2px black;
 }
+
+.darkTheme {
+  background-color: gray;
+  color: white;
+}
