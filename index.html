@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="=X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <title>IDK Chatty Group Project</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>IDK Chatty Group Project</title>
 
-</head>
-<body>
-  
-<!-- nav bar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-form navbar-left">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="input-group">
-              <input type="text" id="desc-input" class="form-control" placeholder="Enter message">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Clear message board</button>
-              </span>
-            </div><!-- /input-group -->
-          
+  </head>
+  <body>
+    <div class="container">  
+      <!-- nav bar -->
+      <div class="row">
+        <nav class="navbar navbar-default navbar-white navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header"> 
+              <a class="navbar-brand" href="#">
+                <img src="chattyImage.png" height="65px" alt="Responsive image">
+              </a>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Enter message">
+                </div>
+                <button type="submit" class="btn btn-default">Clear message board</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- checkboxes -->
+      <div class="row">  
+        <div class="col-xs-5 col-xs-offset-2 col-sm-5 col-sm-offset-2">
           <div class="checkbox">
             <label class="checkbox-inline">
               <input type="checkbox" id="checkBoxDarkTheme" value="option1">Dark theme
-            </label>
-         
-
-          
+            </label> 
             <label class="checkbox-inline">
               <input type="checkbox" id="checkBoxLargeText" value="option2">Large text
             </label>
-          
+          </div>
+        </div>
+      </div>
+      <!--Message-->
+      <div class="container-fluid">
+        <div class="row"> 
+          <div class="col-xs-2 col-sm-2-offset">
+            <p id="message">Messages:</p>
+          </div> 
+        </div> 
+      </div>
+      <!-- Message Text from Chatty -->
+      <div class="row"> 
+        <div class="col-lg-6">
+          <div id="textArea">
           </div>
         </div>
       </div>
     </div>
-  </nav>
-  
-  <!--message area  -->
-  <p id="message">Messages:</p>
-  
-  <textarea id="textArea" class="form-control" rows="20"></textarea>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src= "main.js"></script>
+    <script type="text/javascript" src= "load.js"></script>
+    <script type="text/javascript" src= "addMessage.js"></script>
+    <script type="text/javascript" src= "delete.js"></script>
 
-
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-
-  <script type="text/javascript" src= "main.js"></script>
-  <script type="text/javascript" src= "load.js"></script>
-  <script type="text/javascript" src= "addMessage.js"></script>
-  <script type="text/javascript" src= "delete.js"></script>
-
-</body>
+  </body>
 </html>
