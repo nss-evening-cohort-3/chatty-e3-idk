@@ -1,19 +1,20 @@
 'use strict'
 // This is the main iife that gets augmented by our individual js files
 
-let Chatty = (function() {
+var Chatty = (function() {
 
   return {};
 
 })();
 
-
+// ------ Sends the message string (of JSON messages) to the DOM --------------- //
 let showMessages = function(ourText, elId) {
   let messageArea = document.getElementById(elId);
 
   messageArea.innerHTML = buildMessages(ourText);
 }
 
+// ------ Builds a message string from the JSON message data (loaded by load.js) --------------- //
 let buildMessages = function(messages) {
 
   let ourMessages = "";
@@ -26,3 +27,21 @@ let buildMessages = function(messages) {
   });
   return ourMessages;
 }
+
+// ------- Event listener and conditionals for dark-theme checkbox --------------- //
+
+let darkCheck = document.getElementById("checkBoxDarkTheme");
+
+darkCheck.addEventListener("click", function(){
+  if (darkCheck.checked) {
+    textArea.setAttribute("class", "darkTheme");
+  }
+  else {
+    textArea.removeAttribute("class", "darkTheme");
+  }
+});
+
+
+
+
+
