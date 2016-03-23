@@ -28,5 +28,20 @@ let buildMessages = function(messages) {
   return ourMessages;
 }
 
+// ------- Event listener and conditionals for dark-theme checkbox --------------- //
+
+let darkCheck = document.getElementById("checkBoxDarkTheme");
+
+darkCheck.addEventListener("click", function(){
+  if (darkCheck.checked) {
+    textArea.setAttribute("class", "darkTheme");
+  }
+  else {
+    textArea.removeAttribute("class", "darkTheme");
+  }
+});
+
+
+
 
 
