@@ -30,3 +30,8 @@ body { padding-top: 90px; }
   color: white;
 }
 
+
+.largeText {
+  font-size: 2em;
+}
+

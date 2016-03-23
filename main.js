@@ -41,7 +41,18 @@ darkCheck.addEventListener("click", function(){
   }
 });
 
+// ------- Event listener and conditionals for dark-theme checkbox --------------- //
 
+let largeCheck = document.getElementById("checkBoxLargeText");
+
+largeCheck.addEventListener("click", function(){
+  if (largeCheck.checked) {
+    textArea.setAttribute("class", "largeText");
+  }
+  else {
+    textArea.removeAttribute("class", "largeText");
+  }
+});
 
 
 
