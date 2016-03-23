@@ -32,12 +32,7 @@ let buildMessages = function(messages) {
 let darkCheck = document.getElementById("checkBoxDarkTheme");
 
 darkCheck.addEventListener("click", function(){
-  if (darkCheck.checked) {
-    textArea.setAttribute("class", "darkTheme");
-  }
-  else {
-    textArea.removeAttribute("class", "darkTheme");
-  }
+  textArea.classList.toggle("darkTheme");
 });
 
 let teBox = document.getElementById("tBox");
@@ -55,5 +50,13 @@ teBox.addEventListener("keypress", function(e){
   // }
 });
 // alert("ppp");
+// ------- Event listener and conditionals for dark-theme checkbox --------------- //
+
+let largeCheck = document.getElementById("checkBoxLargeText");
+
+largeCheck.addEventListener("click", function(){
+  textArea.classList.toggle("largeText");
+});
+
 
 
