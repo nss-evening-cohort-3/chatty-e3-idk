@@ -5,7 +5,7 @@ var Chatty = (function(originalChatty) {
   let loadSuccess= function(){
     var myMessages = JSON.parse(this.responseText);
 
-    showMessages(myMessages.messages, "textArea");
+    showJSONMessages(myMessages.messages, "textArea");
   }
 
   let loadFailed = function () {
