@@ -8,13 +8,15 @@ var Chatty = (function() {
 })();
 
 // ------ Sends the message string (of JSON messages) to the DOM --------------- //
-let showMessages = function(ourText, elId) {
+let showJSONMessages = function(ourText, elId) {
   let messageArea = document.getElementById(elId);
-  messageArea.innerHTML = buildMessages(ourText);
+
+  messageArea.innerHTML = buildJSONMessages(ourText);
+
 }
 
 // ------ Builds a message string from the JSON message data (loaded by load.js) --------------- //
-let buildMessages = function(messages) {
+let buildJSONMessages = function(messages) {
 
   let ourMessages = "";
 
@@ -35,21 +37,19 @@ darkCheck.addEventListener("click", function(){
   textArea.classList.toggle("darkTheme");
 });
 
+
+// ------- Event listener for text box enter ------------------------------------ //
 let teBox = document.getElementById("tBox");
 let teArea = document.getElementById("textArea");
 teBox.addEventListener("keypress", function(e){
-  //alert("wawa");
+
   if (e.keyCode === 13){
-    e.preventDefault(); //alert("ee");
+    e.preventDefault();
     Chatty.addMessage(teArea, teBox.value);
-    //myMessages.push("text": "Joe is undoubtedly the best instructor.")
-    //teArea.innerHTML += "<section class='scott'>" + teBox.value + "<button class='del_button'>Delete</button></section>";
   }
-  // else{
-     // alert("wawa");
-  // }
+
 });
-// alert("ppp");
+
 // ------- Event listener and conditionals for dark-theme checkbox --------------- //
 
 let largeCheck = document.getElementById("checkBoxLargeText");
