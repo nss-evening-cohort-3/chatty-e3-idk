@@ -3,9 +3,9 @@
 var Chatty = (function(originalChatty) {
 
   let loadSuccess= function(){
-    var myMessages = JSON.parse(this.responseText);
 
-    showJSONMessages(myMessages.messages, "textArea");
+    var myMessages = JSON.parse(this.responseText);
+    gatherMessages(myMessages.messages);
   }
 
   let loadFailed = function () {
