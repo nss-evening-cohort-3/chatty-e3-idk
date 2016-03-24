@@ -3,14 +3,18 @@
 var Chatty = (function(originalChatty) {
 
   let loadSuccess= function(){
+
     var myMessages = JSON.parse(this.responseText);
 
-    showJSONMessages(myMessages.messages, "textArea");
+    //showMessages(myMessages.messages);
+    gatherMessages(myMessages.messages);
   }
 
   let loadFailed = function () {
     alert("Sorry, that didn't work.");
   }
+
+
 
   let chatRequest = new XMLHttpRequest();
 
