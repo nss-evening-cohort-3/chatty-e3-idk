@@ -12,6 +12,7 @@ let showJSONMessages = function(ourText, elId) {
   let messageArea = document.getElementById(elId);
 
   messageArea.innerHTML = buildJSONMessages(ourText);
+
 }
 
 // ------ Builds a message string from the JSON message data (loaded by load.js) --------------- //
@@ -34,6 +35,19 @@ let darkCheck = document.getElementById("checkBoxDarkTheme");
 
 darkCheck.addEventListener("click", function(){
   textArea.classList.toggle("darkTheme");
+});
+
+
+// ------- Event listener for text box enter ------------------------------------ //
+let teBox = document.getElementById("tBox");
+let teArea = document.getElementById("textArea");
+teBox.addEventListener("keypress", function(e){
+
+  if (e.keyCode === 13){
+    e.preventDefault();
+    Chatty.addMessage(teArea, teBox.value);
+  }
+
 });
 
 // ------- Event listener and conditionals for dark-theme checkbox --------------- //
