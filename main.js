@@ -15,18 +15,18 @@ var Chatty = (function() {
 
 // ------ Sends the message string (of JSON messages) to the DOM --------------- //
 
-// IS IT POSSIBLE TO BUILD THIS BACK IN WITH PARTS FROM BUILD FUNCTION??? //
-  let showMessages = function(ourText, elId) {
-    let messageArea = document.getElementById(elId);
+  let showMessages = function(ourText) {
 
-    let thingy = gatherMessages(ourText);
-    //messageArea.innerHTML = thingy;
-    console.log("thingy", thingy);
+    let messageArea = document.getElementById("textArea");
+
+    messageArea.innerHTML = ourText;
+
   }
 
 // ---------- Push JSON messages to myMessages array --------------------------//
 
   let gatherMessages = function(messages) {
+
     let messagesArray;
 
     messages.forEach(function (message, index) {
@@ -52,9 +52,7 @@ var Chatty = (function() {
      ourMessages += `</section>`;
     });
 
-    let messageArea = document.getElementById("textArea");
-
-    messageArea.innerHTML = ourMessages;
+    showMessages(ourMessages);
   }
 
 
@@ -68,6 +66,7 @@ darkCheck.addEventListener("click", function(){
 
 
 // ------- Event listener for text box enter ------------------------------------ //
+
 let teBox = document.getElementById("tBox");
 let teArea = document.getElementById("textArea");
 teBox.addEventListener("keypress", function(e){
@@ -85,26 +84,5 @@ let largeCheck = document.getElementById("checkBoxLargeText");
 
 largeCheck.addEventListener("click", function(){
   textArea.classList.toggle("largeText");
-});
-
-// ------- Add event listeners dynamically --------------------------------------- //
-
-document.querySelector("body").addEventListener("click", function(event) {
-  console.log(event);
-
-  // Handle the click event on any li
-  if (event.target.tagName.toLowerCase() === "li") {
-    console.log("You clicked on an <li> element");
-  }
-
-  // Handle the click event on any DOM element with a certain class
-  if (event.target.className === "article-section") {
-    console.log("You clicked on an `article-section` element");
-  }
-
-  // Inspect the `id` property of the event target
-  if (event.target.id === "page-title") {
-    console.log("You clicked on the page-title element");
-  }
 });
 
