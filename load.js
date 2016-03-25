@@ -22,7 +22,7 @@ var Chatty = (function(originalChatty) {
     items.forEach(function(item, index) {
 
      ourMessages += `<section id="message--${index}"> ${item}`;
-     ourMessages += `<button id="btn--${index} class="del_button">Delete</button>`;
+     ourMessages += `<button id="btn--${index}" class="dButton">Delete</button>`;
      ourMessages += `</section>`;
     });
 
