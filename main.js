@@ -15,9 +15,9 @@ var Chatty = (function() {
 
 // ------ Sends the message string (of JSON messages) to the DOM --------------- //
 
-  let showMessages = function(ourText) {
+  let showMessages = function(ourText, ourId) {
 
-    let messageArea = document.getElementById("textArea");
+    let messageArea = document.getElementById(ourId);
 
     messageArea.innerHTML = ourText;
 
@@ -52,7 +52,7 @@ var Chatty = (function() {
      ourMessages += `</section>`;
     });
 
-    showMessages(ourMessages);
+    showMessages(ourMessages, "textArea");
   }
 
 
