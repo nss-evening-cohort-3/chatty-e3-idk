@@ -1,5 +1,4 @@
 'use strict'
-
 // This is the main iife that gets augmented by the other js files
 
 var Chatty = (function() {
@@ -24,7 +23,7 @@ darkCheck.addEventListener("click", function(){
 });
 
 
-// ------- Event listener for text box enter ------------------------------------ //
+// ------- Event listener for text box enter (also clears input box) ----------------- //
 
 let teBox = document.getElementById("tBox");
 let teArea = document.getElementById("textArea");
@@ -32,7 +31,8 @@ teBox.addEventListener("keypress", function(e){
 
   if (e.keyCode === 13){
     e.preventDefault();
-    Chatty.addMessage(teArea, teBox.value);
+    Chatty.addMessagesToArray(teBox.value);
+    teBox.value = "";
   }
 
 });
