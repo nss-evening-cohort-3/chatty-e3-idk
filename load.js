@@ -21,7 +21,7 @@ var Chatty = (function(originalChatty) {
 
     items.forEach(function(item, index) {
 
-     ourMessages += `<section id="message--${index}"> ${item.text}`;
+     ourMessages += `<section id="message--${index}"> ${item}`;
      ourMessages += `<button id="btn--${index} class="del_button">Delete</button>`;
      ourMessages += `</section>`;
     });
@@ -39,7 +39,7 @@ var Chatty = (function(originalChatty) {
     messages.forEach(function (message, index) {
 
       messagesArray = Chatty.getArray();
-      messagesArray.push(message);
+      messagesArray.push(message.text);
 
     });
 
