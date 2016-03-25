@@ -23,7 +23,8 @@ var Chatty = (function(originalChatty) {
     let messageArea = document.getElementById(ourId);
     messageArea.innerHTML = ourText;
 
-  }
+    originalChatty.addEventsOnDeleteButton();
+  };
 
   return originalChatty;
 
