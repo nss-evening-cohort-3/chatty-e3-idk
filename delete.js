@@ -17,13 +17,21 @@ var Chatty = (function(originalChatty) {
 // ------- Event Delete the message selected --------------- //
 
   originalChatty.youClickedMe = function(event) {
+    let messagesArray;
+
     let listParent = event.target.parentElement;
+    let messageId = listParent.getAttribute('id').split("--")[1];
 
     textArea.removeChild(listParent);
-  };
+    messagesArray = Chatty.getArray();
 
+    messagesArray.splice(messageId, 1);
+
+  };
 
  return originalChatty;
 
 })( Chatty || {} );
 
+
+// messagesArray.splice(id, 0)
