@@ -6,12 +6,12 @@ Our group project was building our own, very basic, version of Slack. We will be
 ### Contributors: 
 -[Katye Russell](https://github.com/complikatyed)
 -[Scott Schaffer](https://github.com/scottpschaffer) 
--[Bradley Guthrie](https://github.com/guthb)
+-[Bradley Guthrie](https://github.com/guthb)-- Team Leader
 
 
 ### Setup
 
-You will need a simpel web server to host this, Node.js worked well for us:
+You will need a simple web server to host this, Node.js worked well for us:
 1. For Macintosh systems, at the termial promt: ``` $ npm install http-server -g ```
 1. at the prompt make a directory for hosting ``` $ mkdir IDK
 1. Change to the directory you plan to host the application ``` $ cd IDK/ ```
