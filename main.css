@@ -1,7 +1,6 @@
 body { padding-top: 90px; }
 
 #textArea {
-
   border:solid 2px black;
   padding: 5px;
 
@@ -11,6 +10,10 @@ body { padding-top: 90px; }
    border:solid 2px black;
 }
 
+.dButton {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
 
 .navbar {
   height: 80px;
