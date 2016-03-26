@@ -1,18 +1,30 @@
-# Chatty Group Project
+# IDK Chatty Group Project
 
-## Setup
+### Description:  
+Our group project was building our own, very basic, version of Slack. We will be using event handlers, IIFEs, DOM manipulation, CSS manipulation, and XHRs to complete our mission.
 
-Every teammate copy and run the following commands in the host machine terminal.
+### Contributors: 
+-[Katye Russell](https://github.com/complikatyed)
+-[Scott Schaffer](https://github.com/scottpschaffer) 
+-[Bradley Guthrie](https://github.com/guthb)
 
-```bash
-mkdir -p ~/workspace/group-projects && cd $_
-git clone [Github Classroom repo URL]
-cd [repo name]
-```
 
-## Requirements
+### Setup
 
-Check out the [simple wireframe](https://app.moqups.com/chortlehoort/uGBbLbK46Y/view/page/a9d5cd7bf) for this application on Moqups.com. You can make your final interface as fancy as you like, but keep the general layout similar to the wireframe.
+You will need a simpel web server to host this, Node.js worked well for us:
+1. For Macintosh systems, at the termial promt: ``` $ npm install http-server -g ```
+1. at the prompt make a directory for hosting ``` $ mkdir IDK
+1. Change to the directory you plan to host the application ``` $ cd IDK/ ```
+1. Now start your web server ```` http-server -p ```
+
+#### ScreenShot of Completed Project ![Screenshot](idkChatty.png)
+
+### Acomplishments met
+Only requirements were met, no bonus items were attempted.
+
+## Requirements for the effort
+
+Build to [simple wireframe](https://app.moqups.com/chortlehoort/uGBbLbK46Y/view/page/a9d5cd7bf) for this application on Moqups.com. You can make your final interface as fancy as you like, but keep the general layout similar to the wireframe.
 
 ### Navigation bar
 
@@ -33,6 +45,7 @@ Check out the [simple wireframe](https://app.moqups.com/chortlehoort/uGBbLbK46Y/
 1. If the user unchecks the box, the background color should change back to white with black text for messages.
 
 ### Messages
+
 1. When the user presses the return key in the message field, create a `<div>` element in the DOM, below the input field that will hold all messages as they get created.
 1. The message should have a button displayed after it with the text "Delete" inside of it.
 1. When the delete button next to a message is clicked, only that message should be removed from the DOM.
@@ -89,7 +102,7 @@ document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", tr
 ```
 
 
-## Bonus criteria
+## Bonus criteria 
 
 For you overachievers, once you've completed the basic criteria, take a stab at these.
 
