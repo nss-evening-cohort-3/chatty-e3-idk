@@ -12,7 +12,7 @@ var Chatty = (function(originalChatty) {
       messagesArray.push(userMessage);
 
     originalChatty.buildMessages(messagesArray);
-  }
+  };
 
 
   // ------ Sends the message string (built in the buildMessages function) to the DOM  ------- //
@@ -24,6 +24,7 @@ var Chatty = (function(originalChatty) {
     messageArea.innerHTML = ourText;
 
     originalChatty.addEventsOnDeleteButton();
+
   };
 
   return originalChatty;

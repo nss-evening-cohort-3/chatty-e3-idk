@@ -45,3 +45,12 @@ largeCheck.addEventListener("click", function(){
   textArea.classList.toggle("largeText");
 });
 
+// ------- Event listener and conditionals clear messages addded --------------- //
+
+// function addEventOnMessagesClearButton(){
+//   console.log("inclearbutton");
+//   let clearButtonListener = document.getElementsByClassName("btn btn-default")
+//   clearButton = clearButtonListener.addEventListener("click", function(){
+//     Chatty.addMessagesToArray();
+//     clearButton.disabled=true;
+//   })
