@@ -1,12 +1,9 @@
 body { padding-top: 90px; }
 
-#message {
- 
-}
-
 #textArea {
 
   border:solid 2px black;
+  padding: 5px;
 
 }
 

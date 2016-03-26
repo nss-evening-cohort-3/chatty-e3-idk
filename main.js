@@ -5,6 +5,7 @@ var Chatty = (function() {
 
   var myMessages = [];
 
+
   return {
     getArray: function() {
       return myMessages;
@@ -47,10 +48,14 @@ largeCheck.addEventListener("click", function(){
 
 // ------- Event listener and conditionals clear messages addded --------------- //
 
-// function addEventOnMessagesClearButton(){
-//   console.log("inclearbutton");
-//   let clearButtonListener = document.getElementsByClassName("btn btn-default")
-//   clearButton = clearButtonListener.addEventListener("click", function(){
-//     Chatty.addMessagesToArray();
-//     clearButton.disabled=true;
-//   })
+let clearButton = document.getElementById("clr");
+
+clearButton = clearButton.addEventListener("click", function(e){
+     e.preventDefault();
+     teArea.innerHTML = "";
+
+  if(teArea.innerHTML === "") {
+    document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
+  }
+
+});

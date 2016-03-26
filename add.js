@@ -23,6 +23,8 @@ var Chatty = (function(originalChatty) {
     let messageArea = document.getElementById(ourId);
     messageArea.innerHTML = ourText;
 
+    document.getElementsByClassName("clear-messages")[0].removeAttribute("disabled");
+
     originalChatty.addEventsOnDeleteButton();
 
   };
