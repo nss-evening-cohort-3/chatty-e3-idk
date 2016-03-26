@@ -4,7 +4,6 @@ var Chatty = (function(originalChatty) {
 
  // ------- Event listener and conditionals for delete messages --------------- //
 
-
   originalChatty.addEventsOnDeleteButton = function() {
     let deleteButtonListener = document.getElementsByClassName("dButton");
 
@@ -23,7 +22,8 @@ var Chatty = (function(originalChatty) {
     textArea.removeChild(listParent);
   };
 
-  return originalChatty;
+
+ return originalChatty;
 
 })( Chatty || {} );
 
