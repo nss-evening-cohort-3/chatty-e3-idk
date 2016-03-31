@@ -4,8 +4,8 @@
 Our group project was building our own, very basic, version of Slack. We will be using event handlers, IIFEs, DOM manipulation, CSS manipulation, and XHRs to complete our mission.
 
 ### Contributors: 
--[Katye Russell](https://github.com/complikatyed)
--[Scott Schaffer](https://github.com/scottpschaffer) 
+-[Katye Russell](https://github.com/complikatyed)  
+-[Scott Schaffer](https://github.com/scottpschaffer)   
 -[Bradley Guthrie](https://github.com/guthb)-- Team Leader
 
 
