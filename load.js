@@ -46,6 +46,18 @@ var Chatty = (function(originalChatty) {
     originalChatty.buildMessages(messagesArray);
   }
 
+// --------------  Clears the messagesArray   -------------- //
+
+  originalChatty.clearMessages = function() {
+
+    let messagesArray;
+
+      messagesArray = Chatty.getArray();
+      messagesArray.length = 0;
+
+  };
+
+
   // ---------------------   XHR event listeners   -------------------------- //
 
   let chatRequest = new XMLHttpRequest();

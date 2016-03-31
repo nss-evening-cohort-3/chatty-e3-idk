@@ -50,9 +50,10 @@ largeCheck.addEventListener("click", function(){
 
 let clearButton = document.getElementById("clr");
 
-clearButton = clearButton.addEventListener("click", function(e){
+  clearButton = clearButton.addEventListener("click", function(e){
      e.preventDefault();
      teArea.innerHTML = "";
+     Chatty.clearMessages();
 
   if(teArea.innerHTML === "") {
     document.getElementsByClassName("clear-messages")[0].setAttribute("disabled", true);
