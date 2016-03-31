@@ -1,0 +1,4 @@
+## Lessons Learned
+
+1. This was probably my most successful experience with partner- and group-programming. We were divided into groups based on similar levels of ability and confidence, so no one needed to be carried and everyone was able to contribute pretty equally.  The three of us approached the project in fairly similar ways -- wanting to make our Trello board granular inside specific cards, choosing to take on a skill-honing task instead of sticking to the easy things, etc.
+1. My git-fu expanded significantly this time around and I was able to talk teammates successfully through a couple of minor git snafus.  Feeling good about my commit messages as well.
